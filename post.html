@@ -1,372 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como usar IA para criar um sistema de conteúdo mais consistente | EssentIA Social</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artigo - EssentIA Social</title>
     <meta
       name="description"
-      content="Entenda como a inteligência artificial pode apoiar estratégia, produção e análise sem substituir a autenticidade da marca."
-    >
-    <meta
-      name="keywords"
-      content="IA para conteúdo, sistema de conteúdo, marketing com inteligência artificial, estratégia de conteúdo, EssentIA Social"
-    >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      content="Leia nosso artigo sobre estratégia de conteúdo e marketing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-    >
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
-
-    <!-- WordPress component candidate: header.php -->
-    <header class="site-header" data-site-header>
-      <div class="container site-header__inner">
-        <a class="site-brand" href="/" aria-label="EssentIA Social - Página inicial">
-          <img
-            class="site-brand__logo"
-            src="logo/96e44a52-939f-4792-a0a8-6a1f3f467e9d.png"
-            alt="EssentIA Social"
-            width="244"
-            height="102"
-          >
+    <!-- WordPress futuro: header.php -->
+    <!-- WordPress futuro: wp_nav_menu() -->
+    <!-- WordPress futuro: custom_logo() -->
+    <!-- WordPress futuro: home_url('/#diagnostico') -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="index.html" aria-label="EssentIA Social">
+          <!-- WordPress futuro: <?php echo get_template_directory_uri(); ?>/assets/img/logo.png -->
+          <img src="assets/img/logo.png" alt="EssentIA Social" class="site-logo__img" />
         </a>
 
+        <nav class="site-nav" id="primary-menu" aria-label="Menu principal">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html#solucoes">SOLUÇÕES</a></li>
+            <li><a class="site-nav__link" href="index.html#sobre">SOBRE</a></li>
+            <li><a class="site-nav__link" href="index.html#cases">CASES</a></li>
+            <li><a class="site-nav__link" href="index.html#faq">FAQ</a></li>
+            <li><a class="site-nav__link" href="blog.html">CONTEÚDO</a></li>
+            <li><a class="site-nav__link" href="index.html#metodo">MÉTODO</a></li>
+          </ul>
+        </nav>
+
+        <a class="site-header__cta" href="index.html#diagnostico">AGENDAR DIAGNÓSTICO</a>
+
         <button
-          class="site-header__toggle"
+          class="site-toggle"
           type="button"
-          aria-label="Abrir menu principal"
           aria-expanded="false"
-          aria-controls="site-navigation"
-          data-nav-toggle
+          aria-controls="primary-menu"
+          aria-label="Abrir menu"
         >
           <span></span>
           <span></span>
           <span></span>
         </button>
-
-        <nav class="site-nav" id="site-navigation" aria-label="Principal" data-site-nav>
-          <ul class="site-nav__list">
-            <li><a href="/#solucoes">Soluções</a></li>
-            <li><a href="/#sobre">Sobre</a></li>
-            <li><a href="/#cases">Cases</a></li>
-            <li><a href="/#faq">FAQ</a></li>
-            <li><a href="/blog">Conteúdo</a></li>
-            <li><a href="/#metodo">Método</a></li>
-          </ul>
-
-          <a
-            class="button button--primary button--small"
-            href="https://wa.me/5519998477151?text=Ol%C3%A1%2C%20li%20um%20artigo%20da%20EssentIA%20Social%20e%20quero%20agendar%20um%20diagn%C3%B3stico."
-            target="_blank"
-            rel="noopener"
-          >
-            Agendar Diagnóstico
-          </a>
-        </nav>
       </div>
     </header>
 
-    <main id="main-content">
-      <!-- WordPress single candidate: single.php / template-parts/single/post-hero.php -->
-      <section class="post-hero">
-        <div class="container">
-          <nav class="breadcrumb" aria-label="Breadcrumb">
-            <ol>
-              <li><a href="/">Início</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li aria-current="page">Artigo</li>
-            </ol>
-          </nav>
-
-          <div class="post-hero__grid">
-            <div class="post-hero__content">
-              <!-- WordPress dynamic field: categoria do post -->
-              <p class="section-badge">Tecnologia &amp; Marketing</p>
-
-              <!-- WordPress dynamic field: titulo do post -->
-              <h1 class="post-hero__title">Como usar IA para criar um sistema de conteúdo mais consistente</h1>
-
-              <!-- WordPress dynamic field: resumo/excerpt do post -->
-              <p class="post-hero__subtitle">
-                Entenda como a inteligência artificial pode apoiar estratégia, produção e análise sem substituir a
-                autenticidade da marca.
-              </p>
-
-              <div class="post-hero__meta" aria-label="Informações do artigo">
-                <!-- WordPress dynamic field: data de publicacao -->
-                <span>Publicado em 2026</span>
-                <span>5 min de leitura</span>
-              </div>
-            </div>
-
-            <figure class="post-hero__figure">
-              <!-- WordPress dynamic field: imagem destacada / the_post_thumbnail() -->
-              <img
-                src="assets/img/post-featured-ai-content.svg"
-                alt="Visual tecnológico com painéis de IA, marketing, conteúdo e métricas"
-                width="1200"
-                height="760"
-              >
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <div class="section post-body-section">
-        <div class="container post-layout">
-          <aside class="post-sidebar" aria-label="Navegação interna do artigo">
-            <nav class="post-toc card" aria-label="Sumário do artigo">
-              <p class="post-toc__title">Neste artigo</p>
-              <a href="#introducao">Introdução</a>
-              <a href="#estrategia">Estratégia</a>
-              <a href="#producao">Produção</a>
-              <a href="#performance">Performance</a>
-              <a href="#conclusao">Conclusão</a>
-            </nav>
-          </aside>
-
-          <!-- WordPress dynamic field: conteudo do post / the_content() -->
-          <article class="post-content" aria-labelledby="article-title">
-            <header class="post-content__header">
-              <p class="section-badge">Leitura estratégica</p>
-              <h2 class="post-content__title" id="article-title">Sistema, não improviso</h2>
-            </header>
-
-            <section class="article-section" id="introducao">
-              <h2>Introdução</h2>
-              <p>
-                Produzir conteúdo com consistência é um dos maiores desafios para empresas e profissionais que
-                dependem de autoridade digital para crescer. A IA pode ajudar, mas apenas quando usada dentro de um
-                sistema estratégico.
-              </p>
-              <p>
-                O ponto não é trocar pensamento por automação. O ponto é reduzir ruído operacional, organizar a
-                produção e criar um ciclo em que estratégia, execução e análise se alimentam continuamente.
-              </p>
-              <div class="article-callout">
-                <strong>Ideia central:</strong>
-                IA aumenta velocidade, mas é o sistema que transforma velocidade em crescimento previsível.
-              </div>
-            </section>
-
-            <section class="article-section" id="estrategia">
-              <h2>O problema não é só produzir mais</h2>
-              <p>
-                Muitos negócios tentam resolver a presença digital aumentando o volume de posts. Isso ajuda pouco
-                quando não existe clareza sobre posicionamento, público, oferta, canais e objetivo de cada conteúdo.
-              </p>
-              <p>
-                Produzir mais sem direção pode aumentar a sensação de esforço, mas não necessariamente aumenta
-                autoridade, conexão ou oportunidade comercial.
-              </p>
-              <ul class="article-list">
-                <li>Falta de prioridade transforma conteúdo em tarefa solta.</li>
-                <li>Falta de narrativa faz a marca parecer genérica.</li>
-                <li>Falta de análise impede que o processo melhore com o tempo.</li>
-              </ul>
-
-              <h2>IA como ferramenta, não como substituição</h2>
-              <p>
-                A inteligência artificial deve apoiar pesquisa, organização, rascunhos, variações e análise. Ela não
-                deve substituir visão estratégica, experiência, curadoria e identidade.
-              </p>
-              <div class="article-callout article-callout--blue">
-                <strong>Boa aplicação:</strong>
-                usar IA para acelerar etapas repetitivas e liberar mais energia humana para decisões, repertório e
-                posicionamento.
-              </div>
-
-              <h2>Estratégia antes da automação</h2>
-              <p>
-                Antes de criar prompts, calendários ou fluxos automatizados, é preciso definir o que o conteúdo deve
-                construir. Crescimento previsível nasce de uma arquitetura clara.
-              </p>
-              <p>
-                Essa arquitetura inclui temas centrais, mensagens-chave, formatos, canais, frequência, oferta e
-                indicadores de evolução.
-              </p>
-            </section>
-
-            <section class="article-section" id="producao">
-              <h2>Como estruturar um sistema de conteúdo</h2>
-              <p>
-                Um sistema de conteúdo combina método e operação. Ele precisa ser simples o bastante para ser mantido
-                toda semana e inteligente o bastante para gerar aprendizado.
-              </p>
-              <ul class="article-list">
-                <li>Diagnóstico: entender marca, objetivo, público e gargalos.</li>
-                <li>Arquitetura: definir pilares, narrativas e formatos prioritários.</li>
-                <li>Produção: criar fluxos de briefing, pesquisa, rascunho, revisão e publicação.</li>
-                <li>Distribuição: adaptar a mensagem aos canais e momentos certos.</li>
-                <li>Otimização: analisar padrões e transformar dados em decisões.</li>
-              </ul>
-              <p>
-                Nesse cenário, a IA entra como camada de apoio em cada etapa, ajudando a ganhar velocidade sem apagar
-                a essência da comunicação.
-              </p>
-            </section>
-
-            <section class="article-section" id="performance">
-              <h2>Métricas que realmente importam</h2>
-              <p>
-                Métricas de vaidade podem indicar alcance momentâneo, mas não explicam sozinhas se o sistema está
-                construindo autoridade, demanda e previsibilidade.
-              </p>
-              <p>
-                Um bom acompanhamento considera sinais de consistência, qualidade de interação, clareza de
-                posicionamento, geração de conversas e evolução dos temas ao longo do tempo.
-              </p>
-              <div class="article-callout">
-                <strong>Pense em ciclos:</strong>
-                publicar, observar, interpretar, ajustar e repetir com mais clareza.
-              </div>
-            </section>
-
-            <section class="article-section" id="conclusao">
-              <h2>Conclusão</h2>
-              <p>
-                A IA pode tornar a produção de conteúdo mais rápida, mas a consistência vem de um sistema. Quando a
-                tecnologia é guiada por estratégia, ela deixa de ser atalho e passa a ser infraestrutura de crescimento.
-              </p>
-              <p>
-                Para marcas que dependem de autoridade digital, o futuro não está em produzir qualquer coisa com mais
-                velocidade. Está em produzir com direção, análise e essência.
-              </p>
-            </section>
-
-            <section class="article-cta card" aria-labelledby="article-cta-title">
-              <div>
-                <p class="section-badge">Próximo passo</p>
-                <h2 id="article-cta-title">Quer transformar conteúdo em crescimento previsível?</h2>
-                <p>
-                  A EssentIA Social estrutura sistemas de conteúdo com IA para empresas e profissionais que querem
-                  crescer com consistência, autoridade e escala.
-                </p>
-              </div>
-              <a
-                class="button button--primary"
-                href="https://wa.me/5519998477151?text=Ol%C3%A1%2C%20li%20um%20artigo%20da%20EssentIA%20Social%20e%20quero%20agendar%20um%20diagn%C3%B3stico."
-                target="_blank"
-                rel="noopener"
-              >
-                Agendar Diagnóstico
-              </a>
-            </section>
-          </article>
-        </div>
-      </div>
-
-      <!-- WordPress dynamic field: posts relacionados / WP_Query -->
-      <section class="section related-posts" aria-labelledby="related-posts-title">
-        <div class="container">
-          <div class="section__header section__header--centered">
-            <p class="section-badge">Continue lendo</p>
-            <h2 class="section__title" id="related-posts-title">Artigos relacionados</h2>
-          </div>
-
-          <div class="cards-grid cards-grid--blog">
-            <article class="card post-card">
-              <a class="post-card__link" href="/blog/autoridade-nas-redes-sociais-com-consistencia">
-                <div class="post-card__content">
-                  <p class="post-card__tag">Estratégia</p>
-                  <h3>Como criar autoridade nas redes sociais com consistência</h3>
-                  <p>Entenda como presença recorrente, narrativa clara e método fortalecem a percepção da marca.</p>
-                  <span class="button button--ghost button--small">Ler artigo</span>
-                </div>
-              </a>
-            </article>
-
-            <article class="card post-card">
-              <a class="post-card__link" href="/blog/metricas-de-vaidade-nao-sustentam-crescimento">
-                <div class="post-card__content">
-                  <p class="post-card__tag">Performance</p>
-                  <h3>Por que métricas de vaidade não sustentam crescimento</h3>
-                  <p>Uma visão prática sobre indicadores que conectam conteúdo a evolução real do negócio.</p>
-                  <span class="button button--ghost button--small">Ler artigo</span>
-                </div>
-              </a>
-            </article>
-
-            <article class="card post-card">
-              <a class="post-card__link" href="/blog/ia-na-estrategia-de-conteudo-moderna">
-                <div class="post-card__content">
-                  <p class="post-card__tag">IA Aplicada</p>
-                  <h3>O papel da IA na estratégia de conteúdo moderna</h3>
-                  <p>Como usar inteligência artificial para ampliar repertório, eficiência e capacidade analítica.</p>
-                  <span class="button button--ghost button--small">Ler artigo</span>
-                </div>
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
+    <main>
+      <article style="min-height: 400px; display: flex; align-items: center; justify-content: center; background: #050510;">
+        <h1 style="color: white; font-size: 2.5rem; text-align: center;">Seu Problema é a Falta de um Sistema para Crescer nas Redes Sociais</h1>
+      </article>
     </main>
 
-    <!-- WordPress component candidate: footer.php -->
+    <!-- WordPress futuro: footer.php -->
+    <!-- WordPress futuro: wp_nav_menu() -->
     <footer class="site-footer">
-      <div class="container site-footer__inner">
-        <a class="site-brand site-brand--footer" href="/" aria-label="EssentIA Social - Página inicial">
-          <img
-            class="site-brand__logo"
-            src="logo/96e44a52-939f-4792-a0a8-6a1f3f467e9d.png"
-            alt="EssentIA Social"
-            width="244"
-            height="102"
-          >
+      <div class="site-footer__inner">
+        <a class="site-footer__logo" href="index.html" aria-label="EssentIA Social">
+          <!-- WordPress futuro: <?php echo get_template_directory_uri(); ?>/assets/img/logo.png -->
+          <img src="assets/img/logo.png" alt="EssentIA Social" />
         </a>
 
-        <nav class="site-footer__nav" aria-label="Links do rodapé">
-          <a href="/#solucoes">Soluções</a>
-          <a href="/#sobre">Sobre</a>
-          <a href="/#cases">Cases</a>
-          <a href="/#faq">FAQ</a>
-          <a href="/blog">Blog</a>
-          <a href="/#metodo">Método</a>
+        <nav class="site-footer__nav" aria-label="Menu de rodapé">
+          <ul>
+            <li><a href="index.html#solucoes">SOLUÇÕES</a></li>
+            <li><a href="index.html#sobre">SOBRE</a></li>
+            <li><a href="index.html#cases">CASES</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="blog.html">CONTEÚDO</a></li>
+            <li><a href="index.html#metodo">MÉTODO</a></li>
+          </ul>
         </nav>
 
-        <div class="site-footer__meta">
-          <div class="site-footer__links">
-            <a href="/termos-de-uso">Termos de Uso</a>
-            <a href="/politica-privacidade">Política de Privacidade</a>
-            <a
-              class="button button--ghost button--small"
-              href="https://wa.me/5519998477151?text=Ol%C3%A1%2C%20li%20um%20artigo%20da%20EssentIA%20Social%20e%20quero%20agendar%20um%20diagn%C3%B3stico."
-              target="_blank"
-              rel="noopener"
-            >
-              Agendar Diagnóstico
-            </a>
-          </div>
-          <div class="social-links" aria-label="Redes sociais">
-            <span class="social-link" aria-label="Instagram">IG</span>
-            <span class="social-link" aria-label="TikTok">TT</span>
-            <span class="social-link" aria-label="LinkedIn">IN</span>
-            <span class="social-link" aria-label="X">X</span>
-            <span class="social-link" aria-label="Google">G</span>
-            <span class="social-link" aria-label="Email">@</span>
-          </div>
-          <p>© 2026 EssentIA Social. Todos os direitos reservados.</p>
+        <a class="site-footer__cta" href="index.html#diagnostico">AGENDAR DIAGNÓSTICO</a>
+
+        <div class="site-footer__copy">© 2026 EssentIA Social. Todos os direitos reservados</div>
+
+        <div class="site-footer__legal">
+          <a href="termos-de-uso.html">Termos de Uso</a>
+          <span>|</span>
+          <a href="politica-privacidade.html">Política de Privacidade</a>
+        </div>
+
+        <div class="site-footer__social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+            </svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.75 2.9 2.9 0 0 1 2.31-4.64 2.88 2.88 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.4-.05z" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.84 0-9.753h3.554v1.375c.425-.654 1.187-1.586 2.882-1.586 2.105 0 3.685 1.375 3.685 4.331v5.633zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.957.77-1.715 1.916-1.715.99 0 1.914.758 1.914 1.715 0 .953-.924 1.715-1.914 1.715zm1.6 11.597H3.738V9.557h3.199v10.895zM22.224 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.224 0z" />
+            </svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.627l-5.1-6.694-5.867 6.694h-3.306l7.73-8.835L.26 2.25h6.782l4.6 6.088 5.313-6.088zM17.15 18.738h1.828L6.122 4.186H4.158l13-14.552z" />
+            </svg>
+          </a>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" aria-label="Google">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+            </svg>
+          </a>
+          <a href="mailto:contato@essentiasocial.com" aria-label="E-mail">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
 
-    <a
-      class="whatsapp-float"
-      href="https://wa.me/5519998477151?text=Ol%C3%A1%2C%20li%20um%20artigo%20da%20EssentIA%20Social%20e%20quero%20agendar%20um%20diagn%C3%B3stico."
-      target="_blank"
-      rel="noopener"
-      aria-label="Falar com a EssentIA Social no WhatsApp"
-    >
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.43L3 20l1.12-4.28A8.5 8.5 0 1 1 20 11.5Z"/>
-        <path d="M8.7 7.7c.2-.45.4-.46.62-.46h.52c.16 0 .4.06.61.3.2.24.78.76.78 1.85s-.8 2.14-.92 2.28c-.12.16-1.55 2.48 3.77 4.22.47.16.84.13 1.15-.07.36-.22 1.15-.94 1.31-1.35.16-.42.16-.78.11-.86-.05-.08-.18-.13-.4-.24-.2-.1-1.24-.61-1.43-.68-.2-.07-.34-.1-.48.1-.14.2-.55.68-.67.82-.12.14-.25.15-.46.05-.21-.11-.9-.33-1.72-1.05-.64-.57-1.07-1.28-1.2-1.49-.12-.21-.01-.33.1-.43.1-.1.21-.25.32-.37.1-.13.14-.21.21-.36.07-.14.04-.27-.02-.38-.06-.1-.51-1.24-.7-1.7Z"/>
+    <!-- WhatsApp Flutuante -->
+    <a class="whatsapp-float" href="https://wa.me/5519998477151" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12.04 2C6.5 2 2 6.41 2 11.84c0 2.08.67 4.01 1.8 5.59L2.62 22l4.77-1.24c1.5.8 3.2 1.22 4.66 1.22h.01c5.54 0 10.04-4.42 10.04-9.85C22.09 6.41 17.59 2 12.04 2zM12.06 20.3h-.01c-1.36 0-2.69-.37-3.84-1.07l-.27-.16-2.83.74.76-2.75-.17-.28a8.03 8.03 0 0 1-1.23-4.28c0-4.42 3.42-8.02 7.62-8.02 2.03 0 3.94.79 5.38 2.22a7.9 7.9 0 0 1 2.23 5.61c0 4.43-3.42 8.02-7.64 8.02z" />
+        <path d="M16.23 13.84c-.22-.11-1.32-.65-1.53-.72-.2-.08-.35-.11-.49.11-.14.22-.55.72-.67.87-.12.14-.24.17-.46.06-.22-.11-.92-.33-1.75-1.05-.65-.57-1.1-1.27-1.22-1.49-.13-.22-.01-.34.1-.45.1-.1.22-.25.33-.38.11-.13.14-.22.22-.36.07-.14.03-.28-.02-.39-.06-.11-.5-1.19-.69-1.63-.18-.43-.37-.37-.5-.37h-.43c-.14 0-.36.05-.55.25-.19.22-.73.71-.73 1.73 0 1.02.75 2 1.85 3.19 1.26 1.36 2.91 2.11 4.04 2.46 1.36.43 1.9.37 2.58.3.42-.05 1.32-.53 1.51-1.05.19-.5.19-.94.13-1.05-.06-.11-.2-.17-.42-.28z" />
       </svg>
     </a>
 
